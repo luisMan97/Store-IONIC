@@ -1,0 +1,7 @@
+{
+  "name": "StoreAloti",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
