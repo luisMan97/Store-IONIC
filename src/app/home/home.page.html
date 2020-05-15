@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Aloti Software
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,60 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Aloti Software</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+
+    <ion-card>
+      <ion-select placeholder="{{users[0].name + ' ' + users[0].apellidos}}" (ionChange)="onChange($event)">
+        <ion-select-option *ngFor="let user of users" value="{{user.id}}">
+          {{user.name + ' ' + user.apellidos}}
+        </ion-select-option>
+      </ion-select>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label>Mi perfil</ion-label>
+        <ion-button (click)="goToProfile()" fill="outline" slot="end">Ir a mi perfil</ion-button>
+      </ion-item>
+    
+      <ion-card-content>
+        Tus datos personales en esta sección, fotografía personales,
+        nombres, correo y genero.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon name="card-outline" slot="start"></ion-icon>
+        <ion-label>Comprar</ion-label>
+        <ion-button (click)="goToBuy()" fill="outline" slot="end">Ir a comprar</ion-button>
+      </ion-item>
+    
+      <ion-card-content>
+        Aquí puedes hacer tus compras online, escoge el producto, la cantidad y da a comprar,
+        así de facil, sin más.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+        <ion-label>Mis compras</ion-label>
+        <ion-button (click)="goToMyBuys()" fill="outline" slot="end">Ir a compras</ion-button>
+      </ion-item>
+    
+      <ion-card-content>
+        En esta sección encontrarás las compras anteriormente realizadas.
+      </ion-card-content>
+    </ion-card>   
+
+  </ion-card>
+
 </ion-content>
+
+

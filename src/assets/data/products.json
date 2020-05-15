@@ -1,0 +1,19 @@
+{ 
+    "products": [
+        {
+            "id": 1, 
+            "name": "xbox one",
+            "price": "900"
+        },
+        {
+            "id": 2, 
+            "name": "Play 4",
+            "price": "850"
+        },
+        {
+            "id": 3, 
+            "name": "Macbook Pro",
+            "price": "2500"
+        }
+    ]
+}

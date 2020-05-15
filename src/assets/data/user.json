@@ -1,0 +1,96 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "Jorge Luis",
+            "apellidos": "Rivera Ladino",
+            "email": "riveraladinojorgeluis@gmail.com",
+            "genero": "Masculino",
+            "purchases": [
+                {
+                    "producto": "Xbox",
+                    "valor": "850",
+                    "total": "850",
+                    "fecha": "25/01/2020",
+                    "cantidad": "1"
+                },
+                {
+                    "producto": "Play",
+                    "valor": "800",
+                    "total": "1600",
+                    "fecha": "25/01/2020",
+                    "cantidad": "2"
+                }
+            ]
+        }, 
+        {
+            "id": "2",
+            "name": "Siul",
+            "apellidos": "Arevir",
+            "email": "siul_arevir@gmail.com",
+            "genero": "Masculino",
+            "purchases": [
+                {
+                    "producto": "Computadora",
+                    "valor": "1000",
+                    "total": "3000",
+                    "fecha": "13/04/2019",
+                    "cantidad": "3"
+                }
+            ]
+        }, 
+        {
+            "id": "3",
+            "name": "Louis",
+            "apellidos": "Arevir",
+            "email": "louis_arevit@gmail.com",
+            "genero": "Masculino",
+            "purchases": [
+                {
+                    "producto": "Nintendo",
+                    "valor": "850",
+                    "total": "850",
+                    "fecha": "25/01/2020",
+                    "cantidad": "1"
+                },
+                {
+                    "producto": "Play",
+                    "valor": "800",
+                    "total": "1600",
+                    "fecha": "25/01/2020",
+                    "cantidad": "2"
+                },
+                {
+                    "producto": "Xbox",
+                    "valor": "800",
+                    "total": "1600",
+                    "fecha": "25/01/2020",
+                    "cantidad": "2"
+                }
+            ]
+        }, 
+        {
+            "id": "4",
+            "name": "George",
+            "apellidos": "Arevir",
+            "email": "george@gmail.com",
+            "genero": "Masculino",
+            "purchases": [
+                {
+                    "producto": "Televisor",
+                    "valor": "700",
+                    "total": "700",
+                    "fecha": "25/01/2020",
+                    "cantidad": "1"
+                },
+                {
+                    "producto": "Play",
+                    "valor": "800",
+                    "total": "1600",
+                    "fecha": "25/01/2020",
+                    "cantidad": "2"
+                }
+            ]
+        }
+    ]
+}

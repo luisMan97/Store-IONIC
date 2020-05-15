@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button (click)="goToHome()">Back</ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Comprar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-select placeholder="{{products[0].name}}" (ionChange)="onChange($event)">
+      <ion-select-option *ngFor="let product of products" value="{{product.id}}">
+        {{product.name}}
+      </ion-select-option>
+    </ion-select>
+
+    <form [formGroup]="buyForm" (ngSubmit)="buyProduct(buyForm.value)">
+      <ion-item>
+        <ion-label>Producto: {{products[idSelected].name}}</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Precio: {{products[idSelected].price}}</ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Cantidad:</ion-label>
+        <ion-input formControlName="cantidad" type="number"></ion-input>
+      </ion-item>
+
+      <div class="validation-error">
+        <ng-container *ngFor="let validation of validation_messages.cantidad">
+          <div *ngIf="buyForm.get('cantidad').hasError(validation.type) && 
+                      (buyForm.get('cantidad').dirty || 
+                      buyForm.get('cantidad').touched)">
+            {{ validation.message }}
+          </div>
+        </ng-container>
+      </div>
+      
+      <ion-button expand="full" shape="round"  type="submit" [disabled]="buyForm.invalid">Comprar</ion-button>
+    </form>
+
+  </ion-card>
+
+</ion-content>

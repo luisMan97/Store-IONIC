@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button (click)="goToHome()">Back</ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Mi perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-avatar class="avatar">
+      <img src="https://via.placeholder.com/150"/>
+    </ion-avatar>
+
+    <ion-item href="#" class="ion-activated">
+      <ion-label>Nombres: {{user.name}}</ion-label>
+    </ion-item>
+  
+    <ion-item href="#">
+      <ion-label>Apellidos: {{user.apellidos}}</ion-label>
+    </ion-item>
+  
+    <ion-item class="ion-activated">
+      <ion-label>Email: {{user.email}}</ion-label>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Genero: {{user.genero}}</ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

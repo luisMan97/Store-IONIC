@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-button (click)="goToHome()">Back</ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Mis compras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item text-wrap *ngFor="let purchase of purchases" class="ion-text-wrap">
+      <p> <b>Producto:</b> {{purchase.producto}}                             
+      <br/> <b>Valor:</b> {{purchase.valor}}                               
+      <br/> <b>Fecha:</b> {{purchase.fecha}}                             
+      <br/> <b>Cantidad:</b> {{purchase.cantidad}}                       
+      <br/> <b>Total:</b> {{purchase.total}} </p>  
+    </ion-item>
+  </ion-list>
+
+</ion-content>
